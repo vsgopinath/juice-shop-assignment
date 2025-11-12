@@ -7,7 +7,6 @@ export default defineConfig({
     viewportWidth: 1514,
     viewportHeight: 1080,
     experimentalStudio: true,
-    experimentalPromptCommand: true,
     setupNodeEvents (on, config) {
     }
   }
