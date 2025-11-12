@@ -8,7 +8,7 @@ Cypress.Commands.add('addNLAddressUI', (address) => {
   cy.get('input[placeholder*="country"]').type(address.country)
   cy.get('input[placeholder*="name"]').type(address.fullName)
   cy.wait(1000)
-  cy.get('input[placeholder*="mobile"]').type(address.mobileNum)
+  cy.get('input[placeholder*="mobile"]').click().type(address.mobileNum)
   cy.get('input[placeholder*="ZIP code"]').type(address.zipCode)
   cy.get('textarea[placeholder*="address"]').type(address.streetAddress)
   cy.get('input[placeholder*="city"]').type(address.city)
